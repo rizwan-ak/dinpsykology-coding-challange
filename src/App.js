@@ -2,7 +2,7 @@
 function App() {
   return (
     <div>
-      d
+      dinpsykology-coding-challange
     </div>
   );
 }
