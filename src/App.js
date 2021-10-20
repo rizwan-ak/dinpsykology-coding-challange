@@ -1,8 +1,9 @@
+import MainPage from "./pages/MainPage";
 
 function App() {
   return (
     <div>
-      dinpsykology-coding-challange
+      <MainPage />
     </div>
   );
 }
