@@ -33,7 +33,11 @@ export default function MainPage() {
   }, []);
 
   //handle next button click
-  const handleNextClick = () => {};
+  const handleNextClick = () => {
+    selectedPic < launchWithAtleast4Pictures.length - 1
+      ? setSelectedPic(selectedPic + 1)
+      : setSelectedPic(0);
+  };
 
   //handle previous button click
   const handlePreviousClick = () => {};
