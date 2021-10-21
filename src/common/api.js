@@ -1,20 +1,11 @@
-import { Api } from "@mui/icons-material";
 import axios from "axios";
-import constants from "./constants";
 const api = axios.create({ baseURL: "https://api.spacexdata.com/" });
 
-const login = async () => {
+export const fetchLaunches = async (callBack) => {
   try {
     const response = await api.get(`v5/launches`);
-
-    console.log(`response`, response);
-    return response?.data;
-  } catch (error) {
-    onError(error?.response.data);
-    return false;
+    callBack(response?.data);
+  } catch (err) {
+    console.error(err);
   }
 };
-
-const API = {};
-
-export default API;

@@ -1,20 +1,18 @@
 import React from "react";
-import { withStyles } from "@material-ui/core/styles";
-import { Button } from "@material-ui/core";
+import { withStyles } from "@mui/styles";
+import { Button } from "@mui/material";
 
 const styles = (theme) => ({
   root: {},
 });
 
-const VCERNButton = (props) => {
+const DPButton = (props) => {
   const { value, ...otherProps } = props;
   return (
-    <div>
-      <Button variant="contained" color="primary" size="large" {...otherProps}>
-        {value}
-      </Button>
-    </div>
+    <Button variant="contained" color="primary" {...otherProps}>
+      {value}
+    </Button>
   );
 };
 
-export default withStyles(styles)(VCERNButton);
+export default withStyles(styles)(DPButton);
