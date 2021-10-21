@@ -47,7 +47,11 @@ export default function MainPage() {
   };
 
   //handle random button click
-  const handleRandomClick = () => {};
+  const handleRandomClick = () => {
+    setSelectedPic(
+      Math.floor(Math.random() * launchWithAtleast4Pictures.length)
+    );
+  };
 
   return (
     <Grid container spacing={2} className={classes.root}>
