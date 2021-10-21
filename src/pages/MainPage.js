@@ -40,7 +40,11 @@ export default function MainPage() {
   };
 
   //handle previous button click
-  const handlePreviousClick = () => {};
+  const handlePreviousClick = () => {
+    selectedPic === 0
+      ? setSelectedPic(launchWithAtleast4Pictures.length - 1)
+      : setSelectedPic(selectedPic - 1);
+  };
 
   //handle random button click
   const handleRandomClick = () => {};
