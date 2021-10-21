@@ -6,11 +6,7 @@ import { makeStyles } from "@mui/styles";
 import DPButton from "../common/elements/DPButton";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    padding: 20,
-    // [theme.breakpoints.down("sm")]: { padding: 5 },
-    textAlign: "center",
-  },
+  root: { padding: 20, textAlign: "center" },
   launchImage: { maxHeight: "80vh", maxWidth: "90vw" },
 }));
 
@@ -66,6 +62,7 @@ export default function MainPage() {
         <DPButton value="Previous" onClick={handlePreviousClick} />
         <DPButton
           value="Random"
+          variant="outlined"
           color="secondary"
           onClick={handleRandomClick}
         />
